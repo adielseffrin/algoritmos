@@ -1,0 +1,10 @@
+package com.pokedex.util;
+
+import com.pokedex.model.Pokemon;
+
+public class Validador {
+
+	public static boolean verificaSeTemPokemonNoVetor(Pokemon pk) {
+		return pk != null;
+	}
+}

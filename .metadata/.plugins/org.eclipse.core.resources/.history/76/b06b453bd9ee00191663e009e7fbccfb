@@ -1,0 +1,25 @@
+package com.pokedex.model;
+
+public class Masterbola {
+	private String tipo;
+	private Pokemon[] pokes;
+	
+	public Masterbola() {
+		pokes = new Pokemon[1];
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	public Pokemon[] getPokes() {
+		return pokes;
+	}
+
+	public void setPokes(Pokemon[] pokes) {
+		this.pokes = pokes;
+	}
+}

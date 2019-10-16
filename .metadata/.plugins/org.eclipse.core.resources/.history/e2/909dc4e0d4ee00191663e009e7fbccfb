@@ -1,0 +1,18 @@
+package com.pokedex;
+import com.pokedex.model.Pokemon;
+import com.pokedex.util.Validador;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pokemon[] pokeVetor = new Pokemon[5];
+		pokeVetor[0] = new Pokemon();
+		
+		pokeVetor[0].setNome("a");
+		System.out.println(
+				Validador.verificaSeTemPokemonNoVetor(
+						pokeVetor[1]));
+		//System.out.println(poke.getNome());
+	}
+
+}

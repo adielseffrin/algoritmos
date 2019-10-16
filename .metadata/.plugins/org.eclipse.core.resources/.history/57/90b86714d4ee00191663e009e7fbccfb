@@ -1,0 +1,11 @@
+package com.pokedex;
+import com.pokedex.model.Pokemon;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pokemon poke = new Pokemon();
+
+	}
+
+}

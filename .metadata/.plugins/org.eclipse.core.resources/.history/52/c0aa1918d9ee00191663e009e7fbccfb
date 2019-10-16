@@ -1,0 +1,33 @@
+package com.pokedex.model;
+
+public class Pokebola {
+	
+	private static int capacidade = 4;
+	private String tipo;
+	public Pokemon[] pokes;
+	
+	public Pokebola() {
+		pokes = new Pokemon[capacidade];
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	public Pokemon[] getPokes() {
+		return pokes;
+	}
+
+	public void setPokes(Pokemon[] pokes) {
+		this.pokes = pokes;
+	}
+
+	//public static int getCapacidade() {
+	//	return capacidade;
+	//}
+	
+	
+}
