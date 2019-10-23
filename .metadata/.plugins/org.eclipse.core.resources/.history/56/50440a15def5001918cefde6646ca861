@@ -1,0 +1,15 @@
+package com.listas;
+import java.util.Scanner;
+
+import com.listas.model.LDNO;
+
+public class Main {
+
+	public static void main(String[] args) {
+		LDNO lista = new LDNO();
+		lista.run();
+		
+
+	}
+
+}
