@@ -12,7 +12,7 @@ public class LSNO {
 	public void run() {
 		do {
 			System.out.println("\nDigite uma opção:\n" + "0 - Sair\n" + "1 - Inserir no inicio\n"
-					+ "2 - Inserir no final\n" + "3 - Buscar\n" + "4 - Excluir\n" + "5 - Esvaziar\n" + "8 - Listar\n");
+					+ "2 - Inserir no final\n" + "3 - Buscar\n" + "4 - Excluir\n" + "5 - Esvaziar\n"+ "6 - Ordenar (com outra lista)\n"+ "7 - Ordenar (na mesma lista)\n" + "8 - Listar\n");
 			opcao = in.nextInt();
 			switch (opcao) {
 			case 0:

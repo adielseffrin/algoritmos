@@ -7,8 +7,8 @@ import com.listas.model.LSNO;
 public class Main {
 
 	public static void main(String[] args) {
-		LDNO lista = new LDNO();
-		//LSNO lista = new LSNO();
+		//LDNO lista = new LDNO();
+		LSNO lista = new LSNO();
 		lista.run();
 		
 
