@@ -35,19 +35,7 @@ public class LDNO {
 				}
 				break;
 			case 2:
-				novo = new ElementoDuplo();
-				System.out.println("Digite um número:");
-				novo.numero = in.nextInt();
-				if (inicio == null) {
-					// lista vazia
-					inicio = novo;
-					fim = novo;
-				} else {
-					// lista não vazia
-					fim.prox = novo;
-					novo.ant = fim;
-					fim = novo;
-				}
+				inserirFinal();
 				break;
 			case 3:
 				// buscar
@@ -90,6 +78,22 @@ public class LDNO {
 				inicio = null;
 				fim = null;
 				break;
+			case 6:
+				LDO listaOrdenada = new LDO();
+				aux= inicio;
+				while(aux != null) {
+					listaOrdenada.inserir(aux.numero);
+					aux = aux.prox;
+				}
+				inicio = null;
+				
+				ElementoDuplo auxLDO = new ElementoDuplo();
+				auxLDO = listaOrdenada.inicio;
+				while(auxLDO != null) {
+					inserirFinal(auxLDO.numero);
+					auxLDO = auxLDO.prox;
+				}
+				break;
 			case 8:
 				if (inicio == null)
 					System.out.println("Lista vazia");
@@ -111,6 +115,37 @@ public class LDNO {
 				break;
 			}
 		} while (!sair);
+	}
+	
+	public void inserirFinal() {
+		novo = new ElementoDuplo();
+		System.out.println("Digite um número:");
+		novo.numero = in.nextInt();
+		if (inicio == null) {
+			// lista vazia
+			inicio = novo;
+			fim = novo;
+		} else {
+			// lista não vazia
+			fim.prox = novo;
+			novo.ant = fim;
+			fim = novo;
+		}
+	}
+	
+	public void inserirFinal(int n) {
+		novo = new ElementoDuplo();
+		novo.numero = n;
+		if (inicio == null) {
+			// lista vazia
+			inicio = novo;
+			fim = novo;
+		} else {
+			// lista não vazia
+			fim.prox = novo;
+			novo.ant = fim;
+			fim = novo;
+		}
 	}
 
 }
