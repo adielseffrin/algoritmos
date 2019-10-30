@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="com.pokedex.model.Masterbola"/>
 <fullyQualifiedTypeName name="com.pokedex.model.Pokebola"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.listas.ElementoDuplo"/>
+<fullyQualifiedTypeName name="com.listas.model.LDO"/>
 </qualifiedTypeNameHistroy>
