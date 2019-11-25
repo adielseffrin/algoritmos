@@ -154,12 +154,50 @@ public class Arvore_AVL {
 
 
 	public static ARVORE rotacao_esquerda(ARVORE aux) {
-		//implementar
+		ARVORE aux1,aux2;
+		aux1 = aux.dir;
+		aux2 = aux1.esq;
+		aux.dir = aux2;
+		aux1.esq  = aux;
+		if(aux.dir == null)
+			aux.altd = 0;
+		else if(aux.dir.alte > aux.dir.altd) {
+			aux.altd = aux.dir.alte+1;
+		}else {
+			aux.altd = aux.dir.altd+1;
+		}
+
+		if(aux1.esq.alte > aux1.esq.altd) {
+			aux1.alte = aux1.esq.alte+1;
+		}else {
+			aux1.alte = aux1.esq.altd+1;
+		}
+
+		return aux1;
 	}
 
 
 	public static ARVORE rotacao_direita(ARVORE aux) {
-		//implementar
+		ARVORE aux1,aux2;
+		aux1 = aux.esq;
+		aux2 = aux1.dir;
+		aux.esq = aux2;
+		aux1.dir  = aux;
+		if(aux.esq == null)
+			aux.alte = 0;
+		else if(aux.esq.alte > aux.esq.altd) {
+			aux.alte = aux.esq.alte+1;
+		}else {
+			aux.alte = aux.esq.altd+1;
+		}
+
+		if(aux1.dir.alte > aux1.dir.altd) {
+			aux1.altd = aux1.dir.alte+1;
+		}else {
+			aux1.altd = aux1.dir.altd+1;
+		}
+
+		return aux1;
 	}
 	
 	
